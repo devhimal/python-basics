@@ -2,25 +2,25 @@
 
 1. Write a program that checks whether a number entered by the user is even or odd.
 
-## Screenshot
+#### Screenshot
 
 ![Assignment Screenshot](assets/assignment1.png)
 
 2. Use a for loop to find the sum of numbers from 1 to 100.
 
-## Screenshot
+#### Screenshot
 
 ![Assignment Screenshot](assets/assignment2.png)
 
 3. Ask the user to input a number and print its multiplication table from 1 to 10.
 
-## Screenshot
+#### Screenshot
 
 ![Assignment Screenshot](assets/assignment3.png)
 
 4. Write a program to count how many vowels are in a string entered by the user.
 
-## Screenshot
+#### Screenshot
 
 ![Assignment Screenshot](assets/assignment4.png)
 
