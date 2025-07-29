@@ -40,3 +40,12 @@ multiply_by = times(7)
 for i in range(1, 11):
     result= multiply_by(i)
     print(f"{7} x {i} = {result}")
+
+
+# *ags and *kwargs in python, variable length arguments
+
+def print_args(*args, **kwargs):
+    print("Positional arguments:", args)
+    print("Keyword arguments:", kwargs)
+
+print_args(1, 2, 3, name="Alice", age=30)
