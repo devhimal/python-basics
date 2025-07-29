@@ -29,3 +29,14 @@ square_lambda = lambda x: x * x
 print("Square of 5 using lambda function:", square_lambda(5))
 
 
+# Nested function, printing multiplication table using nested function.
+def times(x):
+    def multiplier(y):
+        return x * y
+    return multiplier
+
+multiply_by = times(7)
+
+for i in range(1, 11):
+    result= multiply_by(i)
+    print(f"{7} x {i} = {result}")
