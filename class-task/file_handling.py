@@ -33,3 +33,12 @@ x = {"name": "John", "age": 30, "city": "New York"}
 with open('./data.txt', "w") as file:
     json.dump(x, file)
 
+# Copying one file from source to destination
+
+def copy_file(source, destination):
+    with open(source, "rb") as src:
+        with open(destination, "wb") as dst:
+            dst.write(src.read())
+    print(f"File Copied from {source} to {destination}")
+
+copy_file("../README.md", "./himal.txt")
