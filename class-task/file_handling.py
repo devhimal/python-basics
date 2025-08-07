@@ -5,4 +5,4 @@ print(file.read())
 
 # method 2
 with open("./himal.txt") as file:
-    print(file.read())
+    print(file.read()) 
