@@ -105,3 +105,23 @@ def example_function():
 
 example_function()
 
+
+# docstrings in python, they are used to document the purpose and usage of functions, classes, and modules.
+
+def calculate_area(radius):
+    """
+    Calculate the area of a circle given its radius.
+
+    Parameters:
+    radius (float): The radius of the circle.
+
+    Returns:
+    float: The area of the circle.
+    """
+    import math
+    if(radius < 0):
+        raise ValueError("Radius cannot be negative.")
+    return math.pi * radius ** 2
+
+calculated_area = calculate_area(5)
+print(f"The area of the circle with radius 5 is: {calculated_area:.2f}")
