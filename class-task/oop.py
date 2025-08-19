@@ -67,3 +67,35 @@ c = child()
 c.grantparent()
 c.parent()
 c.child()
+
+
+# multiple inheritance
+
+class fourwheeler:
+    def four_wheeler(self):
+        print("This is a four wheeler vehicle.")
+
+class two_wheeler:
+    def two_wheeler(self):
+        print("This is a two wheeler vehicle.")
+
+class car(fourwheeler, two_wheeler):
+    def car(self):
+        print("This is a car.")
+
+m = car()
+m.four_wheeler()
+m.two_wheeler()
+
+# polymorphism and function overloading
+
+def add(*numbers):
+    result = 0
+    for number in numbers:
+        result += number
+    return result
+
+addition = add(1, 2, 3)
+addition2 = add(1, 2, 3, 4, 5)
+print("Addition of 1, 2, 3 is:", addition)
+print("Addition of 1, 2, 3, 4, 5 is:", addition2)
