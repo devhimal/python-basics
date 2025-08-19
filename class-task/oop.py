@@ -17,30 +17,53 @@
 #
 #
 #
+#
+# class Animal:
+#
+#     def __init__(self, name, species):
+#         self.name = name
+#         self.species = species
+#
+#     def eat(self):
+#         print(f"{self.name} is eating.")
+#
+#
+#     def sleep(self):
+#         print(f"{self.name} is sleeping.")
+#
+#
+#
+# class Dog(Animal):
+#     def sleep(self):
+#         print(f"{self.name} also sleeps in a dog bed.")
+#
+#
+# animal = Animal("Generic Animal", "Unknown")
+# animal.eat()
+# animal.sleep()
+#
+# dog = Dog("Buddy", "Dog")
+# dog.sleep()
 
-class Animal:
 
-    def __init__(self, name, species):
-        self.name = name
-        self.species = species
-
-    def eat(self):
-        print(f"{self.name} is eating.")
-    
-
-    def sleep(self):
-        print(f"{self.name} is sleeping.")
+# Aug 19, 2025 ( Tuesday )
 
 
 
-class Dog(Animal):
-    def sleep(self):
-        print(f"{self.name} also sleeps in a dog bed.")
+class Grandparent:
+    def grantparent(self):
+        print("This is the grandparent class.")
+
+class Parent(Grandparent):
+    def parent(self):
+        print("This is the parent class.")
+
+class child(Parent):
+    def child(self):
+        print("This is the child class.")
 
 
-animal = Animal("Generic Animal", "Unknown")
-animal.eat()
-animal.sleep()
-
-dog = Dog("Buddy", "Dog")
-dog.sleep()
+c = child()
+c.grantparent()
+c.parent()
+c.child()
