@@ -48,54 +48,81 @@
 
 # Aug 19, 2025 ( Tuesday )
 
+#
+#
+# class Grandparent:
+#     def grantparent(self):
+#         print("This is the grandparent class.")
+#
+# class Parent(Grandparent):
+#     def parent(self):
+#         print("This is the parent class.")
+#
+# class child(Parent):
+#     def child(self):
+#         print("This is the child class.")
+#
+#
+# c = child()
+# c.grantparent()
+# c.parent()
+# c.child()
+#
+#
+# # multiple inheritance
+#
+# class fourwheeler:
+#     def four_wheeler(self):
+#         print("This is a four wheeler vehicle.")
+#
+# class two_wheeler:
+#     def two_wheeler(self):
+#         print("This is a two wheeler vehicle.")
+#
+# class car(fourwheeler, two_wheeler):
+#     def car(self):
+#         print("This is a car.")
+#
+# m = car()
+# m.four_wheeler()
+# m.two_wheeler()
+#
+# # polymorphism and function overloading
+#
+# def add(*numbers):
+#     result = 0
+#     for number in numbers:
+#         result += number
+#     return result
+#
+# addition = add(1, 2, 3)
+# addition2 = add(1, 2, 3, 4, 5)
+# print("Addition of 1, 2, 3 is:", addition)
+# print("Addition of 1, 2, 3, 4, 5 is:", addition2)
+
+# Example of polymorphism with classes
 
 
-class Grandparent:
-    def grantparent(self):
-        print("This is the grandparent class.")
+# Magic Methods or Special Methods
+#
+class Book:
+    def __init__(self, title, author):
+        self.title = title
+        self.author = author
 
-class Parent(Grandparent):
-    def parent(self):
-        print("This is the parent class.")
+    def __str__(self):
+        return f"{self.title} by {self.author}"
 
-class child(Parent):
-    def child(self):
-        print("This is the child class.")
+    def __len__(self):
+        return len(self.title)
 
+    def __eq__(self, other):
+        return self.title == other.title and self.author == other.author
 
-c = child()
-c.grantparent()
-c.parent()
-c.child()
+book1 = Book("1984", "George Orwell")
+book2 = Book("Himal Tamang", "George Orwell")
 
+print(book1)  # Output: 1984 by George Orwell
+print(len(book1))  # Output: 4 (length of the title "1984")
+print(book1.__eq__(book2))
 
-# multiple inheritance
-
-class fourwheeler:
-    def four_wheeler(self):
-        print("This is a four wheeler vehicle.")
-
-class two_wheeler:
-    def two_wheeler(self):
-        print("This is a two wheeler vehicle.")
-
-class car(fourwheeler, two_wheeler):
-    def car(self):
-        print("This is a car.")
-
-m = car()
-m.four_wheeler()
-m.two_wheeler()
-
-# polymorphism and function overloading
-
-def add(*numbers):
-    result = 0
-    for number in numbers:
-        result += number
-    return result
-
-addition = add(1, 2, 3)
-addition2 = add(1, 2, 3, 4, 5)
-print("Addition of 1, 2, 3 is:", addition)
-print("Addition of 1, 2, 3, 4, 5 is:", addition2)
